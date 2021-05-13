@@ -324,3 +324,55 @@ Given the situation, which of the following WHM interfaces should she utilize to
 
 #Which of the following most accurately describes what happens when a domain with two NS records in its zone is queried?
 - Both records are returned
+
+#Into which of the following lists does a malicious IP get added into automatically, once detected by Imunify360's heuristics?
+- Gray List
+
+#Which of the following Imunify360 components is utilized to detect malicious files on the server?
+- Malware Scanner
+
+#Which of the following indicates a component that visualizes the geographical distribution of incidents on the Imunify Dashboard?
+- Incidents
+
+#Which of the following types of licenses does Imunify360 support, along with key-based licenses?
+- IP 
+
+#Which of the following domains can be successfully used to access Imunify360's official documentation?
+- docs.imunify360.com
+
+#Which of the following indicates the component of Imunify360 that detects and blocks malicious PHP scripts at runtime?
+- Proactive Defense
+
+#Which of the following indicates the standalone, free malware scanner software solution that is made available for cPanel by the Imunify development team?
+- ImunifyAV
+
+#How many days does Imunify360 allow for its trial period?
+- 14 days 
+
+#Which of the following indicates a component that handles kernel patch management, and does not require reboot upon updating?
+- Yum
+
+#Which of the following components handles all HTTP requests from a CDN to identify IP authenticity?
+- WebShield
+
+#Which of the following indicates the type of challenge that is shown for all requests originating from Graylisted IP addresses?
+- CAPCHA
+
+#Which of the following ensures that the 'defense' mode of the Proactive Defense component of Imunify360 is used?
+- PHP Mode
+
+#When viewing the Incidents tab of the User Interface, what color of 'bubble' containing an IP would indicate that the IP is not in any list and that the IP address is not blocked?
+- Blue
+
+#Within which tab of the Imunify360 user interface can blocked ports be managed?
+- Dashboard
+
+#Which of the following users must Imunify360 be installed as?
+- nobody
+
+#Within which tab found in the Imunify360 user interface displays charts of incidents detected and prevented, as well as recommendations and summary statistics?
+- Heatmap
+
+#Which of the following commands can be used to perform Imunify360-related tasks from within the command-line interface?
+
+#In which of the following lists would you add an IP address that should always be considered legitimate, and should never be blocked in any circumstances?
