@@ -1,0 +1,326 @@
+
+#How should users access their webmail?
+- http://webmail.example.com/
+
+#Enabling a Server Profile other than Standard Node will perform which of the following tasks?
+- Hide interfaces and block API functions that are not permitted with the chosen Profile
+
+#Which of the following does not happen when you distribute an account to a mail node?
+- Local mail is retained on the parent node perpetually.
+
+#Select all server roles that are available for Mail Node (including optional roles):
+- Send Mail
+- Local Mail
+- PostgreSQL
+- Receive Mail
+- DNS
+- Spam filter
+- Webmail
+- Relay Mail
+- Calendars and Contacts
+- MySQL/MariaDB 
+
+#Which of the following services are disabled by default (include any optional services)?
+- ftpd
+- httpd
+- mysql
+- postgresql
+- proftpd
+- pureftp
+
+#What must you update the CNAME mail record to if you are manually editing the Zone Templates?
+- mail IN CNAME %maildomain%
+
+#A child node can use what version of cPanel compared to the parent node?
+- The child node can use the same or newer version of cPanel that the parent node uses.
+
+#What happens if the IMAP/POP3/SMTP traffic does not automatically route to the child node?
+- The parent server creates proxy IMAP and POP3 connections to the child node, and reroute SMTP mail delivery to the child node.
+
+#What can a user do if they want to separate the quota between the Mail Node and the Parent Node?
+- Nothing, the quota on the mail node will always be calculated along with the rest of the parent node's quota.
+
+#Which of the following is not a benefit to using Mail Node?
+- No more spam email.
+
+#When is it recommended to make changes to the hostname of a linked node in the Link Server Nodes interface?
+- Only to ensure it matches the current child node's hostname.
+
+#What interface allows you to link a child node to a parent node?
+- Link Server Nodes
+
+#If a parent node is on v96, which of the following versions (select all that apply) can the child node be on?
+- v98, v96
+
+#Which of the following is a reason to use the Mail Profile?
+- To help distribute the load for your server
+
+#What is the recommended method of dedistributing an account?
+- Modify Account
+
+#When should you use the Managing Distribute Accounts feature within Link Server Nodes?
+- Only in an emergency situation, such as if the child node is permanently down
+
+#Which of the following does not apply to Mail Node servers?
+- System and user configurations propagate from the child to the parent node
+
+#Which of the following statements is true?
+- You can have multiple child nodes, but only 1 child per functionality per account
+
+#Is there downtime when offloading mail from a parent node to a child node?
+- No, the automatic process will only delete email from the parent node after the child node has finished receiving all the mail
+
+#######
+Linked Node > A fully licensed cPanel server, or node, that a server administrator designates to either assign or receive tasks from another node
+Child Node > The non-authoritative linked node that receives tasks
+Dedistribution > The process of moving some or all of an account from a child node, back to the parent
+Parent Node > The authoritative linked node, the one that assigns the tasks
+Server Profile > A collection of roles that allows you to optimize a server to perform a specific task or function
+Distributed Account > An account that exists on two or more linked nodes
+Server Roles > A collection of services that provide specific server functionality
+
+#Which of the following EasyApache 4 profile actions can you perform from WHM's EasyApache 4 interface, in modern installations of cPanel & WHM?
+- Upload a profile file from your file system or via a URL
+
+#Which of the following options best describes one of the most notable behaviors that separates the DSO handler from other PHP handlers available in a cPanel & WHM environment?
+- DSO creates new "php" processes, but only uses them to serve content back to the client, not for actually processing PHP code, as other handlers do
+
+#What types of packages do EasyApache 4 rely on to install modules and extensions, when provisioning an EasyApache 4 profile?
+- RPM packages
+
+#Which interface can be used to set a virtual host's PHP version?
+- cPanel & WHM
+
+#Which of the following options accurately indicates the file syntax that can be seen within downloaded EasyApache 4 profiles?
+- JSON
+
+#Which of the following PHP handlers works on only one PHP version at a time?
+- DSO
+
+#Which of the following options describes the appropriate method needed to enable PHP-FPM from within the WHM interface?
+- HP-FPM is enabled via WHM's MultiPHP Manager interface
+
+#Which of the following options best describes the method you would use to install the PHP-FPM software, within a cPanel & WHM environment?
+- PHP-FPM appears under the PHP Extensions stage of the EasyApache 4 profile customization walkthrough
+
+#In modern installations of cPanel & WHM, which of the following PHP configuration values are set automatically during the Initial Setup Assistant steps?
+- memory_limit
+
+#Which of the following options is NOT a real Multi-Processing Module (MPM) available for installation within WHM's EasyApache 4 interface
+- Postfork
+
+#When operating in a cPanel & WHM environment running EasyApache 4, within which of the following WHM interfaces can you adjust the server's default PHP version?
+- This can be adjusted from within WHM's MultiPHP Manager interface
+
+#Of the following options, which of these handlers operate in a non-persistent state, requiring the creation of new PHP processes each time something is executed?
+- suPHP
+
+#You're operating in a PHP 5.6 environment and using DSO as your PHP handler. You've created a .user.ini file in your website's public_html folder, but are not seeing your changes reflected.
+
+Of the following choices, which of these most accurately describes the issue that is occurring here?
+- An .htaccess file stored in public_html should be used instead, containing the appropriate syntax for declaring PHP values
+
+#Which of the following Apache modules are core to Apache and can be disabled, but cannot be removed using the EasyApache 4 interface?
+- mod_userdir
+
+#Which of the following options describes an action that can be performed from within WHM's MultiPHP Manager interface?
+- You can turn on PHP-FPM, per-virtual host, from this interface
+
+#In a cPanel & WHM environment operating with EasyApache 4, one could define an EasyApache profile as which of the following?
+- A collection of packages that can be provisioned
+
+#Which of the following accurately indicates the user that processes created for the DSO handler are owned by?
+- nobody user
+
+#Which of the following options best describes the procedure needed to enable the BlueHost SymLink Protection Patch?
+- Toggle the corresponding option found in WHM's Apache Configuration's Global Configuration interface
+
+#When operating in a cPanel & WHM environment, which of the following files are used by Apache to define the PHP configuration?
+- /etc/apache2/conf.d/php.conf
+
+#During PHP requests, which of the following statements accurately describes how the DSO handler processes the request?
+- PHP handling operates internally by Apache's own processes
+
+#Given the following options, which accurately describe a feature specific to the MyISAM storage engine?
+- MyISAM has repair capabilities that allow you to perform the REPAIR query, either directly or from the WHM interface, on tables that may have corrupted data or indexes
+
+#When using a cPanel & WHM environment, remote MySQL capabilities should be set up via the MySQL Profiles interface in WHM at which of the following stages of a server's operations?
+- After installation, but before beginning to create production accounts on the server
+
+#Which of the following options describes an actual benefit of utilizing remote MySQL capabilities using the MySQL Profiles feature in WHM?
+- Remote MySQL servers can provide significant improvements to Ruby applications hosted on the WHM server
+
+#Ananya has a website that writes data into a MySQL database. She was mail-bombed, and as a result, has gone over the quota that was set for her account by the WHM server administrator. Which of the following best describes what happens to her website now?
+- It continues operating normally and no production impact is seen
+
+#Which of the following types of tables can you repair using the Repair a MySQL Database interface, found in WHM?
+- MyISAM
+
+#The WHM Home >> SQL Services >> Manage Database Users interface in WHM can be used for which of the following purposes?
+- Rename existing database users
+
+#Which of the following options describes the best way to import a SQL dump into a PostgreSQL databases via the WHM interface?
+- There are no features in WHM that provide this capability; it must be performed from the command-line
+
+#Which of the following is one of the most common causes of MySQL upgrade failures?
+- The my.cnf file contains a number of non-default customizations that have not been verified prior to upgrading
+
+#Using the Manage MySQL Profiles interface in WHM, what is the recommended maximum number of cPanel & WHM servers should be connected to each configured remote MySQL server?
+- 1
+
+#What language is used to add, remove, and view data in a MySQL/MariaDB database?
+- SQl
+
+#Which of the following best describes the MySQL root password's role in a cPanel & WHM environment?
+- A password that is primarily handled via automated means by cPanel & WHM back-end services and can be reset as needed
+
+#The WHM Home >> SQL Services >> Additional Access Hosts interface creates server-level grants that are similar to the grants that can be created in which of the following cPanel account-level Interfaces?
+- cPanel Home >> Databases >> Remote MySQL
+
+#Given the options below, which of these accurately indicate a point during WHM user interactions, which triggers the system to create grants for all pre-existing cPanel accounts, is based on the configurations set within the Additional MySQL Access Hosts interface?
+- When the user clicks the link at the bottom of the Additional MySQL Access Hosts interface labeled "click here"
+
+#Which of the following is a term that indicates a trait of the object described by the table, or can be otherwise referenced as a table column?
+- Field
+
+#MySQL Profiles can set up what kind of relationship between servers
+- 1-to-1 (1:1) only
+
+#Which of the following details about the remote server would you need to know, if you wanted to set up a new remote MySQL profile in WHM?
+- Remote SSH port
+
+#Which of the following definitions best describes InnoDB's data dictionary component?
+- A part of the InnoDB storage engine that uses metadata to map structural information to the file it’s stored in
+
+#Which of the following WHM interfaces would you use to configure a cPanel & WHM server to utilize a remote MySQL® server environment to handle its database operations?
+- Manage MySQL® Profiles
+
+#By default, what kind of remote MySQL access is allowed, given the correct user and password?
+- No remote access is provided by default
+
+#Which of the following database-related terms defines marking a table or row so that only one process can access it a time?
+-  Key constraint
+
+#Justine's boss just told her that the authentication daemon for the mail server is broken.  Which of the following options best indicates the component of the mail system that is affected by this?
+- The component that validates user credentials
+
+#All mail from a specific user is neither delivered to the inbox nor bounced. When you check the WHM Home » Email » Mail Delivery Reports interface, you see a funnel-shaped icon next to the message.
+
+#Which of the following options best describes what this probably indicates?
+- The message was likely rejected at SMTP-time due to spam-like characteristics
+
+#The following options found in the Exim Configuration Manager - Basic Editor interface in WHM is the option that allows you to edit the list of IP addresses that the system excludes ONLY from SMTP sender verification checks?
+- Sender verification bypass IP addresses
+
+#When mail is delivered to "/dev/null”, which of the following statements accurately indicate what happens to the message?
+- The message has been permanently deleted
+
+#cPanel & WHM allows you to choose whether mail should be held in the queue or returned to sender when the recipient's mailbox meets which of the following criteria?
+- Exceeds its assigned quota
+
+#The following options found in the Exim Configuration Manager - Basic Editor interface in WHM enables the contact of the sender's mail server to see if the sender exists?
+- Sender Verification
+
+#If you suspect that mail sent to the user who is over their quota is not delivered, which of the following WHM interfaces might you look to confirm why the message was not delivered?
+- WHM Home » Email » Mail Delivery Reports
+
+#Which of the following mail diagnostics are available within the WHM interface, and can help you troubleshoot mail?
+- A diagnostic tool that performs a permission reset or a reset on an account’s mailbox files permissions on an account's mailbox files and folders
+
+#What actions can you perform in the WHM Home » Email » Mail Queue Manager interface?
+- Perform a test to determine how mail will be routed for a particular email address
+
+#Which of the following options describe an actual value that can be adjusted within the WHM Home » Service Configuration » Mailserver Configuration interface?
+- Controlling the maximum and spare quantities of authentication daemon processes
+
+#Which of the following options describes one of the commonly known characteristics, though are not always indicative, of an average spam email message?
+- The message is large in size
+
+#Within which of the following WHM interfaces can you enable additional ports for Exim to listen for SMTP connections on?
+- WHM Home » Service Configuration » Service Manager
+
+#Which of the following methods best indicate the recommended approach for backing up, restoring or resetting the system's Exim configuration?
+- Use the corresponding functions found within the Exim Configuration Manager interface, in WHM
+
+#Which of the following tools may help you to resolve issues indicated by the time moved backwards warning?
+- The "ntp" tool
+
+#Which of the following options best indicate the typical delivery failure rate that a spamming email account will report, if examining from the Mail Delivery Reports interface found in WHM?
+- The account will have a high failure rate
+
+#Given the following options, which best describes something about an email address that can be determined by using the WHM Home » Email » Mail Troubleshooter interface, found in WHM?
+- It will indicate whether the destination address forwards mail to a remote server
+
+#If there is a long delay indicated when an email is being sent, the Mailer Daemon will send a warning message to which of the following destinations?
+- The email's sender
+
+# The following items from the WHM Home » Service Configuration » Exim Configuration Manager - Basic Editor interface would allow you to exclude mail sent from specific remote IP addresses or hostnames from being subjected to recipient verification checks, sender checks, spam checks, and relay checks?
+- Trusted SMTP IP Addresses
+
+#If the mail server defers a message, what did it do to the message?
+- Rejected it
+
+#José sends an email message to Maria. If the system cannot deliver the message, José will get a notification from which of the following sources?
+- The mailer daemon
+
+#SPF and DKIM are resource records that help reduce which of the following?
+- Spoofing and unauthorized senders
+
+#Which of the following DNS clustering synchronization types, found in the WHM interface, can be best described as the copying of all updated versions of local zone files to all servers in the cluster?
+- Synchronize all zones to all servers
+
+#By default, cPanel creates SPF records in which of the following modes?
+- Testing mode (non-production)
+
+#The system's administrator receives an email alert from WHM when which of the following conditions occur?
+- The hostname does not point to the main IP address on the server
+
+#After installing cPanel & WHM in a new environment, what is the initial, default state of DNS clustering?
+- DNS clustering is initially disabled and must be manually enabled
+
+#Nameserver address record setup in modern installations of cPanel & WHM, both within the Basic WHM Setup and Edit Reseller Nameservers and Privileges interfaces, provide support for certain DNS records associated which of the following types of hostnames?
+- Hostnames that resolve to AAAA records
+
+#Within which of the following WHM interfaces would you be able to add SPF and DKIM records to an account?
+- WHM Home >> Account Functions >> Modify an Account
+
+#cPanel offers a DNSOnly installation specifically for using a standard cPanel & WHM environment in a DNS cluster configuration. Which of the following is the standard license cost associated with DNSOnly?”
+- Free
+
+#Which of the following options best describes the term recursive, in the context of DNS?
+- A recursive nameserver can resolve non-local domains
+
+#Within which of the following WHM interfaces would you enter the default nameservers for accounts that a reseller creates?
+- WHM Home >> Resellers >> Edit Reseller Nameservers and Privileges 
+
+#Which of the following types of authentication is used to establish DNS clustering, in a cPanel & WHM environment?
+- API Tokens
+
+#To add a PTR record that points the IP address 192.168.0.4 to mail.example.com, which zone would you modify?
+- 0.168.192.in-addr.arpa 
+
+#Which of the following options best describes the behavior that occurs when a zone contains no MX records?
+- The A record is used to determine where mail should be sent
+
+#Which of the following statements accurately describe a situation in which DNS zone templates would be useful, in a cPanel & WHM environment?
+- Any time that similar customizations are needed across all hosted accounts
+
+#Which of the following options most accurately describes the interface or interfaces that you would utilize to create reverse DNS zones from within WHM?
+- WHM Home » DNS Zone Manager » Add a DNS Zone, and then WHM Home » DNS Functions » Edit DNS Zone
+
+#When you use the supported 1:1 NAT setup in WHM, the List Accounts interface in WHM will display which of the following values in each accounts' listed IP address column?
+- The public IP address
+
+#Within which of the following WHM interfaces would you perform a graceful restart of the nameserver software?
+- You cannot perform this operation in WHM
+
+#Yudith runs a small web-hosting company.  She has added and removed several zones manually but has accidentally deleted a zone belonging to a cPanel account. Fortunately, this zone did not contain any custom records.
+
+Given the situation, which of the following WHM interfaces should she utilize to re-create the zone?
+- WHM » DNS Functions » Add a DNS Zone
+
+#In which of the following WHM interfaces would you enter the default nameservers for accounts that root creates?
+- WHM Home >> DNS Services >> Configure Default Nameservers
+
+#Which of the following most accurately describes what happens when a domain with two NS records in its zone is queried?
+- Both records are returned
