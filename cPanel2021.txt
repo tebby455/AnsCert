@@ -332,7 +332,7 @@ Given the situation, which of the following WHM interfaces should she utilize to
 - Malware Scanner
 
 #Which of the following indicates a component that visualizes the geographical distribution of incidents on the Imunify Dashboard?
-- Incidents
+- Heatmap
 
 #Which of the following types of licenses does Imunify360 support, along with key-based licenses?
 - IP 
@@ -350,29 +350,127 @@ Given the situation, which of the following WHM interfaces should she utilize to
 - 14 days 
 
 #Which of the following indicates a component that handles kernel patch management, and does not require reboot upon updating?
-- Yum
+- KernelCare
 
 #Which of the following components handles all HTTP requests from a CDN to identify IP authenticity?
 - WebShield
 
 #Which of the following indicates the type of challenge that is shown for all requests originating from Graylisted IP addresses?
-- CAPCHA
+- CAPTCHA
 
 #Which of the following ensures that the 'defense' mode of the Proactive Defense component of Imunify360 is used?
-- PHP Mode
+- Kill Mode
 
 #When viewing the Incidents tab of the User Interface, what color of 'bubble' containing an IP would indicate that the IP is not in any list and that the IP address is not blocked?
-- Blue
+- Green
 
 #Within which tab of the Imunify360 user interface can blocked ports be managed?
-- Dashboard
+- Firewall
 
 #Which of the following users must Imunify360 be installed as?
-- nobody
+- root
 
 #Within which tab found in the Imunify360 user interface displays charts of incidents detected and prevented, as well as recommendations and summary statistics?
-- Heatmap
+- Dashboard
 
 #Which of the following commands can be used to perform Imunify360-related tasks from within the command-line interface?
+- imunify360-agent
 
 #In which of the following lists would you add an IP address that should always be considered legitimate, and should never be blocked in any circumstances?
+- White
+
+#How many layers does Imunify360 specify in its defined approach to establishing a secure Linux server environment?
+- A six-layer approach
+
+#Within which of the following tabs of the User Interface can all recorded alerts and incidents up to the last month be found?
+- Dashboard
+
+#Which of the following options best describes the definition of an orphan backup?
+- A backup of an account that has been terminated from WHM, but is still being stored physically.
+
+-- Orphan Backups are backups that have no associated active accounts.
+
+#Can you set the backup to run every 30 minutes?
+- No. The minimum selectable interval is Hourly.
+
+#Which of the following statements best describes JetBackup's support for single-file restoration from within a backup?
+- This is possible with JetBackup. Single files can always be restored from any backup.
+
+#Which of the following choices best describes the benefits and general purpose of using a backup hook?
+- Backup hooks exist to allow the user to trigger actions with parameters automatically at a specific point.
+
+#When editing user permissions in the JetBackup interface, which of the following best describes the difference between the use of the terms “No”, and “Never”? 
+- 'Never' will deny the action, and won’t allow an override; 'No' will simply deny the action.
+
+#Which of the following statements most accurately describes the status of support for Compressed Backups in Jetbackup?
+- All backup destination types support compressed backups.
+
+#Which of the following statements best describes JetBackup's support for allowing a cPanel user to only view backups, without actually being able to restore them?
+- This is possible with JetBackup through the use of JetBackup's permissions system.
+
+#A client has accounts that utilize over 1 million inodes. What is the best way for this client to skip these accounts during a backup job?
+- The client should create a new filter type called “Inode usage”, then set limits appropriately. 
+
+-- By default on a newly created job, all accounts will be backed up unless a filter is created to exclude specific accounts. You may use more than one filter-type per backup job, which will be joined together with an AND or OR statement.
+
+#A client wishes to receive specific notifications, such as restoration, backup, and clone completion. They would also like to disable some notifications. To which Jetbackup interface should they navigate to accomplish this?
+- The client should use the WHM → JetBackup → Settings → Notification interface to accomplish this.
+
+#A client has enabled Cloudlinux support. How will this affect a backup job's available resources and performance?
+- The job will run within a limited environment, will consume less CPU & IO, and most likely take longer to complete.
+
+--      Your backup folder should be included in mountpoint list of CageFS
+see: CloudLinux Documentation on mountpoints
+Disable CloudLinux support (per job / global settings)
+To get notified for such cases, turn on the "Backup job monitor", when you create a new backup job or by modifying your backup job.
+Use native rsync: change rsync location in the binary location editor.
+
+
+
+#Which of the following best describes JetBackup's support for specifically backing up mailboxes? 
+- JetBackup supports this through the interface, by checking “Backup Only Email Structure” under “Backup contains” from within a job's settings.
+
+#Which of the following options indicates the primary requirement for a snapshot to be used?
+- An active backup job must exist, and must be configured to use destinations that support incremental backups.
+
+#Which of the following statements most accurately describes the status of support for Incremental Backups in JetBackup?
+- Some backup destination types support incremental backups, but not all.
+
+#Can a client schedule a backup job to run immediately after another backup job? 
+- Yes. The client should use the schedule type labeled: After job is done
+
+#Which of the following options best defines a Safety Backup?
+- A safety backup is a special system backup taken prior to a cPanel & WHM upgrade. 
+OK A safety backup is an account backup, or snapshot, taken prior to performing a full account restoration.
+
+-- Safety backups are backups that are created when you restore your account (in case something went wrong). These may be useful if you have users who often need their accounts restored.
+
+#A client can see backups in WHM for their customer, but when the customer tries to browse their backups through the JetBackup section of the cPanel user interface, it appears as if there are no backups. Which of the following choices describes the most likely explanation for this? 
+- The administrator has prevented access to snapshots through JetBackup Access Control List (ACL).
+- The administrator has enabled the “Hide Snapshots” setting for this backup destination.
+
+-- WHM permissions
+
+#Which of the following best describes the fundamental difference between an archived backup and a compressed backup?
+- An archived backup is an uncompressed version of a compressed backup.
+
+#Which of the following options best describes JetBackup's support for specifically backing up DNS Zones?
+- JetBackup supports this through the interface, by checking only “DNS Zones” under “Backup contains” from within a job's settings.
+
+#Is there a way to log all backup activity for a specific cPanel account?  
+- Yes, by using cron jobs to monitor JetBackup, and then performing an action when it is identified that a certain account has been backed up.
+
+#Which of the following options best describes the role and purpose of a JB Config?
+- A JB Config exists as internal JetBackup data containing its full configuration and is useful for disaster migration or recovery.
+
+#When selecting the Accounts backup type - depending on the backup destination type selected - you may choose to use incremental, archived, or this third storage method, selected from the options below?
+- Compressed 
+
+#Which of the following backup structures copy only new and/or modified files recognized since last full backup?
+- Incremental
+
+#Which of these components of a backup job allow you to define how many times to retry a data transfer if the backup job data transfer fails?
+- Data Sync Retries
+
+#A customer's JetBackup backup job has configured the Limit Accounts to Backup value to 10, on a server that contains 80 accounts. How many days will it take for a full account backup to be completed?
+- 8
