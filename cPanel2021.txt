@@ -474,3 +474,464 @@ OK A safety backup is an account backup, or snapshot, taken prior to performing 
 
 #A customer's JetBackup backup job has configured the Limit Accounts to Backup value to 10, on a server that contains 80 accounts. How many days will it take for a full account backup to be completed?
 - 8
+
+
+The location of the branding files for root is found in which of these locations?
+/root/var/cpanel/root/brand -> True
+
+Which term is defined as: "Applies an overlay on the skeletal framework for all of the interfaces"?
+theme -> True
+
+The location of the branding files for resellers is found in which of these locations?
+/home/reseller/etc/brand - l2 -> True
+
+You would use uapi functions when you want to perform which type of operation?
+cPanel account-level operations -> True (chưa chắc lắm)
+
+Which term is defined as: "Adding custom content to header or footer of the UI"?
+Includes -> True
+
+When creating a custom profile file, which file type is used to store the information?
+JSON -> True 
+
+Which term is defined as: "modifies an interface’s features or functionality, and it may also include changes to the interface’s appearance."?
+Plugin -> True (sure)
+
+The EasyApache profiles are found in which location?
+/etc/cpanel/ea4 -> True
+
+The ea-cpanel-tools package contains executables to help you manage your EasyApache 4 configurations from the command line are found in this location:
+/usr/local/bin -> True
+
+cpapi2 calls are similar to which other type of API calls?
+UAPI -> True
+
+Reference Libraries:
+• UAPI — Access and modify cPanel account data and settings.
+• cPanel API 2 — Use UAPI when available, but still pretty good:
+• WHM API 1 — Perform server administration tasks.
+• Manage2 API — Automate cPanel license management.
+
+Deprecated Libraries:
+• cPanel API 1 — Use UAPI instead.
+• WHM API 0 — Use WHM API 1 instead.
+
+Which of the following interfaces are you able to make branding changes to match your companies logo and brand?
+cPanel & Webmail & WHM -> Không chắc
+
+All hook action scripts must have the correct file permissions to work properly, which permissions do they need to have?
+755 -> True
+
+All of the following stages can be hooked during a backup except …
+post -> True
+
+The script that you need to use to “register” your standard hook is called …
+manage_hooks -> True
+
+How many categories of hookable events are possible?
+8 -> True
+
+To register a hookable event which script would you run?
+/usr/local/cpanel/bin/manage_hooks -> True
+
+All of the following categories are hookable events except …
+Update -> True
+
+Cpanel — The Cpanel category creates hookable events for cPanel API 1, cPanel API 2, or UAPI functions.
+PkgAcct — The PkgAcct category's events occur during backup creation.
+Passwd — The Passwd category's events occur when a WHM user changes a cPanel user's password.
+Stats — The Stats category's events occur during statistics processing.
+System — The System category's events occur during system updates or backups.
+Whostmgr — The Whostmgr category's events occur during WHM functions.
+
+All of the following types of code can be used as a hook action code are permissible except …
+.exe -> True
+
+Hook action code must be treated as an encoded data structure of which of the following types?
+JSON -> True
+
+To enable debug mode you would do which of these actions?
+Choose the option from the Tweak Settings interface. -> True
+
+All of the following code types can be run as a hook except …
+Git -> True 
+
+When setting "Disk Space Quota" during package creation, in which unit format must the quota be specified?
+MB -> True 
+
+In order to add environment variables for your web applications, which RPM must be added?
+ea-apache24-mod_env -> True 
+
+During backups you need to specify staging directories, which of the following can not be used as a staging directory on your server?
+/home -> True
+
+
+All of the following resource limits may be set in a package except ...
+SQL databases -> True
+
+Let's assume a node.js developer has an account called "user" on your WHM server and they followed the cPanel guide to creating a test node.js application. Where would you find the node.js test script?
+/home/user/nodejsapp/app.js -> True
+
+Which of the following git commands would you use to update the master branch?
+merge -> True 
+
+The main purpose of the application Git is?
+code version control -> không biết
+ 
+Assuming a cPanel account is using a Feature List with the "SSH Access & Terminal" feature enabled, which privilege will they need to actually access the Terminal feature?
+Shell Access -> True
+
+A simple definition of a "package" on a WHM server would be as follows:
+a set of resource limits and list of usable features
+
+Which file contains the settings for a plugin?
+Configuration -> true
+
+Types of plugins
+
+cPanel & WHM offers third-party developers the ability to create applications that can be used within WHM, cPanel, or Webmail.  Even though there are three locations that applications can be created within the software, there is just one set of instructions that the developer needs to be aware of to use.
+
+This course will cover the basic structure of plugin development so that the developer knows that the application code will integrate with the cPanel software.
+
+**WHM plugins**
+Root or Reseller level applications only.  These programs will only be available to the system administrator of the server where they are installed
+
+**cPanel plugins**
+User-level applications only.  These programs are available to users who fall within the correct ACLs assigned to them.  They will only appear in the cPanel UI if the user has rights to use the application
+
+**Webmail plugins**
+Only available to the webmail user who has the right to access the application
+
+Configuration
+
+* **Plugin** — A plugin modifies an interface’s features or functionality, and it may also include changes to the interface’s appearance.
+
+  * You can write plugins for the cPanel or WHM interfaces.
+
+  * You can use the cPanel Style Guide to ensure that your interfaces match the appearance of standard cPanel interfaces.
+
+  * For more information, read our Guide to cPanel Plugins documentation.
+
+WHM plugins MAY BE available to which types of accounts?
+Root or Reseller -> True
+Root or Reseller level applications only
+
+What part of an API call will specify the session of the call?
+Security token -> True
+
+Which is the primary API that is used to modify cPanel user data?
+UAPI -> True
+
+cPanel plugins are available to which type of accounts?
+User-Level -> True
+User-level applications only
+
+What of the following can be described as a structured way for one program to offer services to other programs?
+Hooked action - l2
+
+Webmail plugins are available to which type of accounts?
+Mail user -> True
+Only available to the webmail user who has the right to access the application.
+
+What is the purpose of the template file in a Plugin?
+Builds the AppConfig file -> True
+
+Which API allows you to manage cPanel licenses?
+Manage2 API -> True
+
+All of the following are features of the developer license except …
+Never expires -> True
+
+When you run the "ea_install_profile" command and you want to test the output, but not actually install the profile you would use which option?
+default (no option) -> không chắc
+
+When a system boots, it runs a script called "onboot_handler", where are the scripts located that are run by this handler?
+/var/cpanel/on_boot theo link -> True <https://docs.cpanel.net/whm/scripts/the-onboot_handler-script/>
+
+What is the version control feature provided by cPanel?
+Git™ Version Control
+
+Which of the following can be customized in a package?
+Feature List -> True
+
+One of the most important features used by developers is the Application Manager, what is the main use of this manager?
+register and unregister applications -> True
+
+An example of an API could be seen as which of the following situations?
+Acquire a list of databases -> True
+
+All of the following scripts can be used in an application file except …
+Png -> không chắc
+Application file(s)  (either CGI or PHP)
+
+While not advised, which port would you use for unsecured API calls to a specific cPanel account?
+2082 -> True
+
+When using whmapi1 on the command line and you want to perform a key/value call to the API you can specify all the following output formats except ...
+jsonpretty -> True
+
+Which API performs server-level tasks?
+WHM API 1 -> True
+
+You want to let someone log into your server, but you would rather not create a new account or password for them. What script could you use if you wanted someone to be able to access your server only once?
+whmlogin
+
+You are going to play around with Tony's website files and want to make sure you get it backed up before you do so. What script could you use?
+pkgacct -> True
+
+Will you review each feature's linked documentation in full?
+Absolutely -> True
+
+Which of the following git commands would you use to update the master branch?
+merge -> True
+
+As an end-user, which is the proper way to restore your full cPanel backup?
+Contact your hosting provider
+hoặc: cPanel account UI 
+
+Which of the following can not be used as a staging directory for the Backup process on your server?
+/etc -> True
+
+Of the following external services, which is not available for remote backup destination usage?
+iCloud -> True
+
+All of the following external services are available for remote backup destinations except ...
+iCloud -> True
+
+As an end user, which is the proper way to restore your full cPanel backup?
+Contact your hosting provider
+
+What does the alias /scripts/ point to in the file system?
+/usr/local/cpanel/scripts/ -> True
+
+Which language is used for a plugin installation?
+Perl -> không chắc
+
+#What's the name of the utility used to check what active connections Exim is currently handling at any particular time?
+- exiwhat
+
+#What is the name of the basic tool used to remotely test a non-secure connection to IMAP or other mail services?
+- telnet
+
+#Which of these unique ID values is carried consistently along with a message across systems in a network or over the internet?
+- Message ID
+
+#What is the full path to Dovecot's primary log file?
+- /var/log/maillog
+
+#The highlighted part of the message below indicates which of the following values? 
+2015-02-18 09:25:42 1Y06VR-0000Iw-7C= test@cptest.test H=localhost ([10.5.2.154]) [::1]:38793 P=esmtpa A=dovecot_login:test@cptest.test S=724 id=afc7s4294172a42cd5ce527636d7b74c.squrrel@10.6.2.152 T="test discard filter" for filters@cptest.test
+- The Exim ID
+
+#Which of the following can be discerned from the Exim log entry shown below?
+1YOv2S-0005IY-7r == test@cptest.test R=virtual_user T=virtual_userdelivery
+- The message was deferred
+
+#The line in the Exim log that contains the SpamAssassin warning indicates which of the following?
+- The cPanel account that the message was scanned by
+
+#Which of the following Exim log entries would indicate that mail was deleted due to a filter?
+- 1YO6bD-000871-1j => /dev/null <test@cptest.test> R=virtual_user_filter T=**bypassed**
+
+#Which mailbox format stores multiple messages in a single file?
+- mdbox
+
+#What router indicates that an Email Account-level filter is being applied?
+- virtual_user
+
+#On cPanel & WHM environments, inbound mail is stored within a subfolder structure that exists in which of the following directories?
+- /home/$USER/mail/
+
+#Of the following mailbox formats, which of these are supported for use in cPanel & WHM environments?
+- mdbox && 
+
+#Given the following options, which one would be descriptive of behavior most likely to indicate that a spam problem is occurring?
+- A large number of failed messages reported
+
+#Which of the following Actions in a cPanel email filter will result in an incoming message being rejected without sending any notifications?
+- Discard Message
+
+#What full command would you run to output only the current number of messages that exist in the queue?
+- exim -bpc
+
+#Below, type the full command used to search the current Exim queue for all messages older than 30 minutes.
+- exiqgrep -o 1800
+
+#Which of the following exim commands would provide you with the same functionality found within WHM's Mail Troubleshooter interface?
+- exim -bt
+
+#Which of the following describes the primary role of the exim -Mvb command?
+- Prints the message body when given the Exim ID
+
+#What is the role of the -f flag when used with the exiqgrep utility?
+- Select messages by sender address
+
+#Which of the following commands will remove all messages sent by the spammer@example.tld user within the last 30 minutes?
+- exiqgrep -f spammer@example.tld -y 1800 -i | xargs exim -Mrm
+
+#Which of the following values are provided in the output of the exim -bp command?
+- Exim ID
+
+#When using Maildir, the "cur" folder contains which of the following items?
+- Mail that HAS been read
+
+#A particular type of email filter is stored in the /etc/vfilters/ directory. Which of the following types of filters are these?
+- Account-level email filters
+
+#In an Exim log entry, the cwd value indicates which of the following?
+- The user executing the command
+
+#Which of the following can be discerned from the Exim log entry shown below?
+1YO6VR-00081w-7C => test <test@cpanel.net> R=virtual_user T=virtual_userdelivery
+- The message was delivered
+
+#Which of the following best describes the role of the exim -bt command?
+- Prints the path that the message will take when Exim attempts delivery to a specified address
+
+#To retrieve the IPv6 record of a domain, you would query for which of the following records in a domain?
+- AAAA
+
+#To ensure that the internet sees the changes that you make DNS zone file manually, which of the following components of a DNS zone should you update?
+- The serial number
+
+#What does the acronym TLD represent, as in for a "TLD nameserver"?
+- Top-level Domain
+
+#Which of the following is the first nameserver that the resolver queries to determine the address of the TLD nameserver?
+- The root nameserver
+
+#What is the full path of the system file used to allow domains to resolve without using network resolvers or internet access?
+- /etc/hosts
+
+#In which path are zone files stored first and foremost for BIND, but which also exist for all other DNS server software when running on cPanel & WHM environments?
+- /var/named
+
+#In a cPanel & WHM environment, you will find zone files stored in /var/named when using which of the following namesever software?
+- All of these
+
+#Which of the following command-line tools can be used to list running processes in a Linux environment?
+- ps
+
+#In a cPanel & WHM environment, DNS zone files can be found in which of the following folders?
+- /var/named
+
+#Which of the following situations can cause very extended start-up and load times, when running the BIND/named nameserver software?
+- Using a very large quantity of zone files
+
+#To force the local system to resolve a domain to a specific IP address, which of the following files would you modify to accomplish this?
+- /etc/hosts
+
+#Which important configuration file would allow you to change important server options, such as enabling debug logging for BIND/named?
+- /etc/named.conf
+
+#Which of the following is the default path for the BIND/named configuration file?
+- /etc/named.conf
+
+#After you update a zone's serial number (or any other record), which of the following commands can you execute to ensure that your local nameserver has been updated to use the new zone data?
+- rndc reload
+
+#Which of the following utilities included with BIND/named can be used to troubleshoot malformed zone files?
+- named-checkzone
+
+#If named fails to start due to a configuration error, which of the following commands would be the most helpful for you to run?
+- named-checkconf
+
+#Which of the following utilities can be used to administer a BIND/named server remotely?
+- rndc
+
+#When operating within a cPanel & WHM server, which of the following indicates the best method to restart the DNS server from the command line?
+- /scripts/restartsrv_named
+
+#Which of the following DNS-related command-line utilities would provide you with similar results to those given by the dig utility, and is used for essentially the same purposes?
+- nslookup
+
+#In a cPanel & WHM environment, DNS zone templates can be used to ensure which of the following?
+- To standardize a set of zone records and structure that will be used for a large number of DNS zones
+
+#Which of the following nameserver applications does not load all of its DNS zones upon startup?
+- MyDNS
+
+#Which of the following file names follows the naming convention for a BIND/named zone file?
+- domain.net.db
+
+#Custom channels can be created in the ___________ file, allowing you to configure your own behaviors for event logging
+- named.conf
+
+#All logged events are assigned with a severity ranging from _______ (lowest) to critical (highest)
+- debug
+
+#The cPanel-provided ______________ script should be used for restarting the DNS service and will provide any startup-related errors and events in its output
+- /usr/local/cpanel/scripts/restartsrv_named
+
+#cPanel & WHM environment default setup includes one custom channel called __________, which logs to /var/log/named/named.log and includes events with a severity of warning or above
+- default_log
+
+#On a cPanel & WHM environment, the system stores DNS zone template files within which of the following paths?
+- /var/cpanel/zonetemplates
+
+#A default cPanel & WHM environment configures a custom logging channel, default_log, to log to which of the following paths?
+- /var/log/named/named.log
+
+#Which of the following is one method that you can use, within the WHM interface, to repair a malformed DNS zone using a zone template?
+- Reset a DNS Zone
+
+#In a BIND/named configuration file, which of these logging categories encompasses all categories that have not already been explicitly configured to use another channel?
+- default
+
+#By default, which of these logging categories are routed into the default_log channel, in a BIND/named DNS server configuration?
+- general
+
+#The rndc.conf file contents contains a secret key that must also exist in which other file?
+- /etc/rndc.key
+
+#The recursion option in the named.conf defines whether your BIND server uses recursive behavior or __________ behavior when handling queries
+- iterative
+
+#Using the _____________ option, you can instruct BIND/named to explicitly send queries using only port 53
+- query-source
+
+#Which option in the named.conf file defines the absolute path that all other relative file paths defined in the configuration will start from?
+- directory
+
+#The localhost_resolver view, if it exists on its own without any other views defined, would make your BIND/named server a ______________ nameserver
+- caching-only
+
+#What BIND/named considers "local" is defined by an address match list that is referenced by the name: _____________
+- localnets
+
+#What does the Error logging severity imply, when referring to BIND/named logs?
+- A problem has been encountered during BIND/named operations that may allow further operations to continue
+
+#At which of the following stages of BIND/named DNS server operations might you encounter a zone or configuration syntax error?
+- During startup
+
+#Which section of the named.conf file controls BIND/named's listening port?
+- options
+
+#By default, which of the following sections appear first in the named.conf file?
+- key
+
+#What does the acronym ACL represent, in the context of a BIND/named configuration (among other contexts)?
+- Access Control List
+
+#Which of the following options best describes the role of DNSSEC?
+- Provides cryptographic authentication of DNS zones
+
+#After a domain is updated at the registrar, where does the registrar then send that domain's record data?
+- To the TLD nameserver
+
+#What is the path of the DNS client configuration file?
+- /etc/resolv.conf
+
+#In a BIND/named configuration, you can modify the level of detail that is provided to remote servers regarding which of the following types of information?
+- Host application details indicating version and server data regarding your BIND/named installation
+
+#A banking website wants to prevent inappropriate certificate authorities from issuing certificates for their domain. Which of the following record types would best be used to assist in accomplishing this?
+- CAA
+
+#What portion of a DNS zone is used to inform other nameservers that a change to the zone has occurred?
+- Serial
+
+#On a server that does not need to facilitate zone transfers, which of the following configuration variables found in the named.conf file should be set to none to disable them?
+- allow-transfer
+
