@@ -743,7 +743,7 @@ Perl -> không chắc
 - /home/$USER/mail/
 
 #Of the following mailbox formats, which of these are supported for use in cPanel & WHM environments?
-- mdbox && 
+- mdbox && MailDir
 
 #Given the following options, which one would be descriptive of behavior most likely to indicate that a spam problem is occurring?
 - A large number of failed messages reported
@@ -935,3 +935,356 @@ Perl -> không chắc
 #On a server that does not need to facilitate zone transfers, which of the following configuration variables found in the named.conf file should be set to none to disable them?
 - allow-transfer
 
+#When discussing a table in a MySQL/MariaDB database, what other term is the word field synonymous with?
+- a column
+
+#Which of the two primary MySQL/MariaDB storage engines discussed above support row-level locking?
+- InnoDB
+
+#What is the name of the configuration setting that cPanel & WHM environments add to the my.cnf file to change its native default behavior, instructing InnoDB to store each of its tablespaces in individual files, instead of lumping them all into the same data file?
+- innodb-file-per-table
+
+#Within what full path in the file system does cPanel & WHM store its database mapping information?
+- /var/cpanel/databases
+
+#On a default cPanel & WHM installation, within which file would you find the root user's MySQL client settings, including the default MySQL host and root credentials?
+- /root/.my.cnf
+
+#Which of the following file extensions are associated specifically with MyISAM tables?
+-  .MYD
+
+#The following text shows an example of which type of syntax, also visible in some mapping-related files stored by cPanel within the file system?
+{"version":1,"MYSQL":{"noprefix":{},"owner":"animals","dbusers":{"cpses_anQnAmWDcX":{"server":"172.16.0.40","dbs":{}}},"server":"172.16.0.40","dbs":{"birds":"172.16.0.40","animals_fish":"172.16.0.40"}}}
+- JSON
+
+#Which of the following statements about InnoDB tablespaces are true?
+- They can be stored individually within a database folder, or lumped together into the ibdata1 file
+
+#Which of the following file extensions are associated specifically with InnoDB tables?
+- .ibd
+
+#What numeric permissions value do we recommend assigning a user-level .my.cnf file with, in order to prevent unauthorized access?
+- 0600
+
+#In the field below, enter the query you would run if you wanted to show only variables that contain the word myisam in their name
+- SHOW VARIABLES LIKE '%myisam%';
+
+#In the field below, type the SQL statement needed to instruct MySQL to begin using a database named "vehicles"
+- use vehicles;
+
+#What is the name of the table that contains privilege and access information, stored within the system mysql database?
+- user
+
+#In MySQL/MariaDB, each connection is handled by its own ________.
+- thread
+
+#Which of the following files should you check if you receive an unknown variable error message during MySQL operation or service start-up?
+- /etc/my.cnf
+
+#When looking at the following excerpt from the beginning of a SHOW GRANTS result, what does the term USAGE ON indicate on the *.* value that follows?
+GRANT USAGE ON *.*
+- That no privileges are given
+
+#Which of the following SQL statements can be used to provide descriptive information about databases, tables, columns, variables, or status information about the server?
+- SHOW
+
+#Which of the following statements are true about SQL usage in a MySQL server?
+- It is NOT case sensitive
+
+#Of the following options, which would be the optimal way to resolve the issue that causes email notifications containing content similar that shown below?
+dbindex cache file is out of date
+- Restore the file from an available backup
+
+#Which of the following SQL queries would be the most effective in identifying MySQL users that still have pre-4.1 passwords in use?
+- SELECT DISTINCT user FROM user WHERE length(password) < 41;
+
+#When looking at the following excerpt from the beginning of a SHOW GRANTS result, what do the wildcard asterisks represent in the *.* shown below?
+GRANT USAGE ON *.*
+- [database].[table]
+
+#What MySQL/MariaDB storage engine is defined as the default on a standard cPanel & WHM installation?
+- MyISAM
+
+#In which of the discussed MySQL/MariaDB storage engines are table files portable, in that they can be copied or moved around the file system and still function as tables when restored or placed within a database folder?
+- MyISAM
+
+#In MySQL 5.7, the log-slow-queries variable is deprecated. Which variable should you use instead, to define the destination path for the slow query log file?
+- slow_query_log_file
+
+#If the MySQL processes are stopped using the kill -9 command, what can you expect to happen?
+- The severed writes on the databases will increase risk of database corruption
+
+#If the backup directory is /backup, where would you find the compressed backup file of the full MySQL data directory?
+- /backup/[date]/system/dirs/_var_lib_mysql.tar.gz
+
+#Error messages in your database error logs that indicate invalid, missing or unexpected system tables can frequently be the result of which of the following issues?
+- An incomplete (partial) upgrade
+
+#Which of the following pieces of information can you find in both the slow query log and the general query log?
+- The user who executed the query
+
+#Which of the following is closest described as the structural metadata used to track objects like tables, indexes, and columns when using the InnoDB storage engine?
+- Data dictionary
+
+#In a cPanel & WHM environment, which of the following tools' purpose can be described as the executable that is responsible for the initial setup of database mapping, as well as any updates that occur between versions?
+- setupdbmap
+
+#In a cPanel & WHM environment, which of the following tools is best described as the command-line equivalent of WHM’s Database Map Tool interface?
+- dbmaptool
+
+#Which of the following variables in a cPanel & WHM server’s /etc/my.cnf file are set by default?
+- default-storage-engine=MyISAM
+
+#What is the default MySQL/MariaDB data directory?
+- /var/lib/mysql/
+
+#The myisamchk utility is considered an offline repair utility. What other command-line utility is considered an online repair utility for MyISAM, and can be performed while MySQL/MariaDB is running?
+- mysqlcheck --repair
+
+#What is the highest level of innodb_force_recovery that can safely be used without risk of data corruption?
+- 3
+
+#Which of the following can be described as a calculated numerical value resulting from a pre-determined algorithm used to represent a set of data?
+- Checksum
+
+#When should you make backups of your configuration files (or the my.cnf file in particular)?
+- When changes are made to the configuration
+
+#How can you prevent cPanel & WHM from performing automated updates on the MySQL® or MariaDB server software?
+- By using the update_local_rpm_version script
+
+#In which of the following subdirectories of a stored cPanel backup folder will you find the individual database backups created from within a cPanel account-level backup?
+- In the mysql directory
+
+#The .frm and db.opt files will appear in database folders when using which of the following MySQL storage engines?
+- Any storage engine
+
+#Which of the following statements is not a legitimate SQL statement?
+- COPY
+
+#Which of the following MySQL/MariaDB-related variables can be controlled via an option found within WHM's Tweak Setting interface?
+- max_allowed_packet || open_files_limit
+
+#Within which of the following locations could you check if you wanted to confirm whether a cPanel & WHM server has "old (pre-4.1) passwords" enabled?
+- Tweak Settings interface in WHM
+
+#Which of the following is the standard wildcard character used in SQL queries?
+- %
+
+#In a cPanel & WHM environment, which of the following tools can best be described as the executable that creates grants_[cpuser].yaml files from existing MySQL grants, as found within the existing mysql.user database?
+- dbstoregrants
+
+#When a remote mail exchanger handles a domain's mail, which of the following files must include the domain?
+- /etc/remotedomains
+
+#In a cPanel & WHM server, which of the following would allow you to select another DNS server application from the command line?
+- setupnameserver
+
+#In a cPanel & WHM environment, in order to define a range or subnet of IP addresses for the system to re-use in the named.conf file, you should create which of the following kinds of configuration objects?
+- ACLs
+
+#Which of the following describes one of the important steps involved in the process of relocating your MySQL data directory to a new partition?
+- Turn off MySQL and MySQL monitoring before performing filesystem changes
+
+#Which of the following are utilities that you can use to try and repair a MySQL database while MySQL is running?
+- The "mysqlcheck" command
+
+#You must stop the MySQL service in order to perform which of the following actions? 
+- Relocate or rename the data directory file in the MySQL data directory
+
+#In a cPanel & WHM environment, the /var/cpanel/databases directory contains which of the following?
+- The files created and used by cPanel for database mapping
+
+#The following text is an example of which type of syntax, also found in some mapping-related files stored by cPanel in the file system?
+MYSQL: 
+animals: 
+animals: 
+- GRANT USAGE ON *.* TO 'animals'@'localhost' IDENTIFIED BY PASSWORD '*75FE48658430441870C524D7ECB8F71EADFAEFD1'
+- GRANT ALL PRIVILEGES ON `birds`.* TO 'animals'@'localhost'
+- GRANT ALL PRIVILEGES ON `animals\_fish`.* TO 'animals'@'localhost'
+PGSQL: {}
+
+- SQL 
+
+#In the context of MySQL databases, which of the following is best described as "plaintext" output containing a re-usable set of MySQL data?
+- MySQL dump
+
+#Which of the following describes one of the important steps that should be taken after restoring a single database from a full cPanel backup, into a new database instance?
+- Associate the database and the database user with the cPanel user using the Database Map Tool
+
+#What is the role of the -y flag when used with the exiqgrep utility?
+- Messages older than the number of seconds given
+
+#Which of the following describes what is indicated by the use of the localuser router during a message's delivery, as seen in the Exim logs?
+- The message was delivered to a default (cPanel) account
+
+#If the Scan outgoing messages for spam and reject based on defined Apache SpamAssassin™ score setting (formerly known as Apache SpamAssassin reject spam score threshold), within the Exim Configuration Manager - Basic Editor interface in WHM, contains a value, at what point during an email transaction is the message actually scanned to enforce this threshold?
+- Immediately before forwarders and filters are processed
+
+#In a cPanel & WHM environment, which of the following applications could be described as a daemon that listens on localhost and assigns scores to messages received by the mail server?
+- dovecot
+
+#Assume the host environment is a default cPanel & WHM installation. Based on the log entry shown below, identify - from the options available - which log file that this entry would be found in:
+
+spam acl condition: error reading from spamd socket: Connection timed out
+- /var/log/maillog
+
+#SpamAssassin obtains its final probability score for a message through which of the following methods?
+- It adds together the score results from each triggered rule
+
+#In a server running cPanel & WHM, which of the following options describes a method for changing the system's default PHP version via the command-line?
+- Use the /usr/local/cpanel/bin/rebuild_phpconf command
+
+#Which of the following options indicates the HTTP status code that produces an error like the one shown below?
+
+Forbidden. Access was denied to at least one relevant file.
+- 403
+
+#Referencing the Apache error log entry shown below, which of the following options best describes the yellow-highlighted portion of the log entry (take note of the specifically-highlighted portion)?
+
+[Fri Sep 09 10:42:29.902022 2011] [core:error] [pid 35708:tid 4328636416] [client 72.15.99.187] File does not exist: /usr/local/apache2/htdocs/favicon.ico
+- The Apache process ID of the process that triggered the error
+
+#Which of the following yum commands will install the EasyApache 4 mod_speling RPM?
+- yum install ea-apache24-mod_speling
+
+#In a cPanel & WHM environment, within which of the following parent directories would you find a subdirectory that includes EasyApache's templates and userdata information, stored by cPanel?
+- /var/cpanel/
+
+#If, from the command line of a server running cPanel & WHM, you run the rebuild_phpconf command with an appropriate action, then include the --errors option, which of the following will happen?
+- It outputs any errors in the rebuild process to the screen (sends to STDERR and log file)
+
+#Which of the following best describes the difference between a process and a thread?
+- Processes can contain multiple threads, and the threads contained in the process share its resources
+
+#How does the /usr/local/bin/php executable know which version of PHP it should be using?
+- The .htaccess file, if it exists, is referenced in order to determine this
+
+#Which of the following terms can be described as a special text string syntax used for describing a search pattern?
+- Regular Expression
+
+#In a cPanel & WHM environment, which of the following utilities can you execute from the command-line to save the current set of Apache & PHP components defined in EasyApache into an EasyApache 4 profile?
+- /usr/local/bin/ea_current_to_profile
+
+#When operating within a cPanel & WHM environment, which of these commands would display all available EasyApache 4 packages from within the server's command line?
+- yum list "ea-*"
+
+#Which of the following options indicates the HTTP status code that produces the error shown below?
+
+Unauthorized. A password is needed to see this page. The browser should prompt for a username and password.
+- 401
+
+#Which of the following options indicates the HTTP status code that results in the status message shown below?
+
+OK. The request was successful.
+- 200
+
+#Which of the following terms can best be described as an input stream where data is sent to and read by a program?
+- STDIN
+
+From the command line in a cPanel & WHM environment, how could you determine whether a server is utilizing a remote MySQL server?
+- Check the MySQL RPMs to see if mysql-client is installed instead of mysql-server
+
+#Most of the executables found within the /usr/local/cpanel/bin directory are not intended for standard usage by users, and are not developed to be user-friendly (frequently lacking any kind of help output or formal documentation). These are intended primarily for back-end and automated handling, as opposed to those executables found within the /usr/local/scripts (/scripts) folder.
+
+There is at least one notable exception to this. Which of the following tools found within this path is actually recommended for server administrator use as needed, in certain circumstances?
+- restoregrants
+
+#In MySQL version 5.6, what happens if an entry in /etc/my.cnf is an unrecognized variable?
+- MySQL refuses to start and logs an error message
+
+#In a cPanel & WHM environment, which of the following files might you find in the /var/cpanel/databases directory?
+- dbindex.db.json
+
+#How many messages does SpamAssassin's Bayesian filter need to process before it can start scoring mail?
+- 200 good samples, and 200 bad samples
+
+#Which of the following applications can be described as a program used during service checks to ensure that spamd is operational?
+- spamc
+
+#Which of the following options best defines a poisoned bayesian database?
+- It has been populated with an excessive amount of false positives
+
+#Which options must you pass to the sa-learn program if you want it to update the Bayesian database with information from a mailbox?
+- --spam/--ham
+
+#When you see a "rndc reload: connection refused" error, which of the following commands should you run first?
+- /scripts/fixrndc
+
+#If you create a customized DNS zone template from the command-line, which of the following would be a correctly-named custom template file name?
+- root_templatename
+
+#Which of the following commands can you use to set up SPF from the command-line, in a cPanel & WHM environment?
+- /usr/local/cpanel/bin/spf_installer
+
+#In a cPanel & WHM environment, within which of the following paths would you be able to find the Apache modules stored?
+- /etc/apache2/modules/
+
+#Which of the following terms can best be described as the destination where a process can write normal output to, usually being to the terminal, server console ("screen"), unless redirected?
+- STDOUT
+
+#Which of the following options describes the best way for you to enable the experimental repository for EasyApache 4, when operating within a cPanel & WHM environment?
+- Perform the following command from the command-line, as root or equivalent: yum install ea4-experimental
+
+#Which of the following factors might affect the amount of Apache access/dom logs that exist on the server?
+- Based on a value given on the "Limit Apache Access Logs" setting, found in WHM's Tweak Settings interface
+
+#Which of the following components can be described as a specific SAPI that provides functionality in a module that behaves as if it had been compiled into Apache itself, handling appropriate requests without producing new, non-Apache processes?
+- DSO
+
+#Which of the following terms can be described as the destination where a process can write error messages, which can often either be to the "screen", or to a log file?
+- STDERR
+
+#Which of the following options best describes the yellow-highlighted portion of the Apache access log entry shown below?
+
+127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326
+- The time taken to complete the request (in seconds)
+
+#In a cPanel & WHM environment, which of the following options describes a method you can use to change Apache's MPM from the command-line?
+- The "yum shell" command should be used to perform a batch transaction so that your web content does not produce errors
+
+#If a file or directory in a path being served by Apache contains incorrect permissions or uses improper user/group ownership values, which of the following HTTP status codes might you see in the Apache logs if a client were to request one of the affected paths?
+- 401
+
+#When an EasyApache 4 profile is uploaded through the WHM interface, where within the file system is it stored?
+- /etc/cpanel/ea4/profiles/custom
+
+#Which of the following best describes the role of the exim -bpc command?
+- Prints the number of messages in the mail queue
+
+#Given two cPanel servers exchanging email, which of the following would appear in both messages' headers, but would not appear in the Exim logs on either the sending or the receiving server?
+- Exim ID
+
+#Which of the following exim commands would output the number of messages that currently exist in the Exim mail queue?
+- exim -bp
+
+#Which of the following describes what is indicated by the use of the virtual_user router during a message's delivery, as seen in the exim logs?
+- The message was delivered to an email account created in the cPanel interface
+
+#Of the following, which of these options describe information that can be obtained by using the yum info command?
+- The plugins currently being loaded by the yum application
+
+#Which of the following items can be described as any of the three things listed below?
+
+A command line program for installing software.
+A file format used to package software.
+The individual packages created in that format.
+- RPM 
+
+#Which of the following terms can be described as a special part of a process that shares resources with others in the same process, and can execute commands?
+- Thread
+
+#What is the full yum command I'd want to run if I wanted to update only the packages related to EasyApache?
+- yum update ea-*
+
+#When administering a server running cPanel & WHM, which of the following commands contains the appropriate paths and arguments needed to install an EasyApache 4 profile from the command-line?
+- /usr/local/bin/ea_install_profile --install /etc/cpanel/ea4/profiles/cpanel/default.json
+
+#In a server running cPanel & WHM, how can you create a new EasyApache 4 profile from within the server's command-line?
+- In the file system, make a copy of an existing profile's file, edit it with any desired changes, then save the new file
+
+#In a cPanel & WHM environment, which of the following paths contain each installed version's PHP configuration files (php.ini), used by MultiPHP? ("##" representing the PHP version, in the options below)
+- /opt/cpanel/ea-php##
+
+#Which of the following options could be described as a repository for PHP extensions?
+- pecl
