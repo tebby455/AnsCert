@@ -476,35 +476,35 @@ OK A safety backup is an account backup, or snapshot, taken prior to performing 
 - 8
 
 
-The location of the branding files for root is found in which of these locations?
-/root/var/cpanel/root/brand -> True
+#The location of the branding files for root is found in which of these locations?
+- /root/var/cpanel/root/brand
 
-Which term is defined as: "Applies an overlay on the skeletal framework for all of the interfaces"?
-theme -> True
+#Which term is defined as: "Applies an overlay on the skeletal framework for all of the interfaces"?
+- theme
 
 The location of the branding files for resellers is found in which of these locations?
-/home/reseller/etc/brand - l2 -> True
+/home/reseller/etc/brand - l2  
 
-You would use uapi functions when you want to perform which type of operation?
-cPanel account-level operations -> True (chưa chắc lắm)
+#You would use uapi functions when you want to perform which type of operation?
+- cPanel account-level operations
 
 Which term is defined as: "Adding custom content to header or footer of the UI"?
-Includes -> True
+Includes  
 
-When creating a custom profile file, which file type is used to store the information?
-JSON -> True 
+#When creating a custom profile file, which file type is used to store the information?
+- JSON 
 
-Which term is defined as: "modifies an interface’s features or functionality, and it may also include changes to the interface’s appearance."?
-Plugin -> True (sure)
+#Which term is defined as: "modifies an interface’s features or functionality, and it may also include changes to the interface’s appearance."?
+- Plugin
 
-The EasyApache profiles are found in which location?
-/etc/cpanel/ea4 -> True
+#The EasyApache profiles are found in which location?
+- /etc/cpanel/ea4
 
-The ea-cpanel-tools package contains executables to help you manage your EasyApache 4 configurations from the command line are found in this location:
-/usr/local/bin -> True
+#The ea-cpanel-tools package contains executables to help you manage your EasyApache 4 configurations from the command line are found in this location:
+- /usr/local/bin
 
 cpapi2 calls are similar to which other type of API calls?
-UAPI -> True
+UAPI  
 
 Reference Libraries:
 • UAPI — Access and modify cPanel account data and settings.
@@ -519,23 +519,23 @@ Deprecated Libraries:
 Which of the following interfaces are you able to make branding changes to match your companies logo and brand?
 cPanel & Webmail & WHM -> Không chắc
 
-All hook action scripts must have the correct file permissions to work properly, which permissions do they need to have?
-755 -> True
+#All hook action scripts must have the correct file permissions to work properly, which permissions do they need to have?
+- 755
 
-All of the following stages can be hooked during a backup except …
-post -> True
+#All of the following stages can be hooked during a backup except …
+- post
 
-The script that you need to use to “register” your standard hook is called …
-manage_hooks -> True
+#The script that you need to use to “register” your standard hook is called …
+- manage_hooks
 
-How many categories of hookable events are possible?
-8 -> True
+#How many categories of hookable events are possible?
+- 8
 
-To register a hookable event which script would you run?
-/usr/local/cpanel/bin/manage_hooks -> True
+#To register a hookable event which script would you run?
+- /usr/local/cpanel/bin/manage_hooks
 
-All of the following categories are hookable events except …
-Update -> True
+#All of the following categories are hookable events except …
+- Update
 
 Cpanel — The Cpanel category creates hookable events for cPanel API 1, cPanel API 2, or UAPI functions.
 PkgAcct — The PkgAcct category's events occur during backup creation.
@@ -544,48 +544,48 @@ Stats — The Stats category's events occur during statistics processing.
 System — The System category's events occur during system updates or backups.
 Whostmgr — The Whostmgr category's events occur during WHM functions.
 
-All of the following types of code can be used as a hook action code are permissible except …
-.exe -> True
+#All of the following types of code can be used as a hook action code are permissible except …
+- .exe
 
-Hook action code must be treated as an encoded data structure of which of the following types?
-JSON -> True
+#Hook action code must be treated as an encoded data structure of which of the following types?
+- JSON
 
-To enable debug mode you would do which of these actions?
-Choose the option from the Tweak Settings interface. -> True
+#To enable debug mode you would do which of these actions?
+- Choose the option from the Tweak Settings interface
 
-All of the following code types can be run as a hook except …
-Git -> True 
+#All of the following code types can be run as a hook except …
+- Git 
 
 When setting "Disk Space Quota" during package creation, in which unit format must the quota be specified?
-MB -> True 
+MB   
 
-In order to add environment variables for your web applications, which RPM must be added?
-ea-apache24-mod_env -> True 
+#In order to add environment variables for your web applications, which RPM must be added?
+- ea-apache24-mod_env 
 
-During backups you need to specify staging directories, which of the following can not be used as a staging directory on your server?
-/home -> True
+#During backups you need to specify staging directories, which of the following can not be used as a staging directory on your server?
+- /home
 
 
-All of the following resource limits may be set in a package except ...
-SQL databases -> True
+#All of the following resource limits may be set in a package except ...
+- SQL databases
 
 Let's assume a node.js developer has an account called "user" on your WHM server and they followed the cPanel guide to creating a test node.js application. Where would you find the node.js test script?
-/home/user/nodejsapp/app.js -> True
+/home/user/nodejsapp/app.js  
 
 Which of the following git commands would you use to update the master branch?
-merge -> True 
+merge   
 
-The main purpose of the application Git is?
-code version control -> không biết
+#The main purpose of the application Git is?
+- code version control
  
-Assuming a cPanel account is using a Feature List with the "SSH Access & Terminal" feature enabled, which privilege will they need to actually access the Terminal feature?
-Shell Access -> True
+#Assuming a cPanel account is using a Feature List with the "SSH Access & Terminal" feature enabled, which privilege will they need to actually access the Terminal feature?
+- Shell Access
 
-A simple definition of a "package" on a WHM server would be as follows:
-a set of resource limits and list of usable features
+#A simple definition of a "package" on a WHM server would be as follows:
+- a set of resource limits and list of usable features
 
 Which file contains the settings for a plugin?
-Configuration -> true
+Configuration  
 
 Types of plugins
 
@@ -612,100 +612,97 @@ Configuration
 
   * For more information, read our Guide to cPanel Plugins documentation.
 
-WHM plugins MAY BE available to which types of accounts?
-Root or Reseller -> True
-Root or Reseller level applications only
+#WHM plugins MAY BE available to which types of accounts?
+- Root or Reseller || Root or Reseller level applications only
 
 What part of an API call will specify the session of the call?
-Security token -> True
+Security token
 
-Which is the primary API that is used to modify cPanel user data?
-UAPI -> True
+#Which is the primary API that is used to modify cPanel user data?
+- UAPI
 
-cPanel plugins are available to which type of accounts?
-User-Level -> True
-User-level applications only
+#cPanel plugins are available to which type of accounts?
+- User-Level || User-level applications only
 
 What of the following can be described as a structured way for one program to offer services to other programs?
 Hooked action - l2
 
-Webmail plugins are available to which type of accounts?
-Mail user -> True
-Only available to the webmail user who has the right to access the application.
+#Webmail plugins are available to which type of accounts?
+- Mail user || Only available to the webmail user who has the right to access the application.
 
-What is the purpose of the template file in a Plugin?
-Builds the AppConfig file -> True
+#What is the purpose of the template file in a Plugin?
+- Builds the AppConfig file
 
-Which API allows you to manage cPanel licenses?
-Manage2 API -> True
+#Which API allows you to manage cPanel licenses?
+- Manage2 API
 
-All of the following are features of the developer license except …
-Never expires -> True
+#All of the following are features of the developer license except …
+- Never expires
 
-When you run the "ea_install_profile" command and you want to test the output, but not actually install the profile you would use which option?
-default (no option) -> không chắc
+#When you run the "ea_install_profile" command and you want to test the output, but not actually install the profile you would use which option?
+- default (no option)
 
-When a system boots, it runs a script called "onboot_handler", where are the scripts located that are run by this handler?
-/var/cpanel/on_boot theo link -> True <https://docs.cpanel.net/whm/scripts/the-onboot_handler-script/>
+#When a system boots, it runs a script called "onboot_handler", where are the scripts located that are run by this handler?
+- /var/cpanel/on_boot
 
 What is the version control feature provided by cPanel?
 Git™ Version Control
 
-Which of the following can be customized in a package?
-Feature List -> True
+#Which of the following can be customized in a package?
+- Feature List
 
-One of the most important features used by developers is the Application Manager, what is the main use of this manager?
-register and unregister applications -> True
+#One of the most important features used by developers is the Application Manager, what is the main use of this manager?
+- register and unregister applications
 
-An example of an API could be seen as which of the following situations?
-Acquire a list of databases -> True
+#An example of an API could be seen as which of the following situations?
+- Acquire a list of databases
 
 All of the following scripts can be used in an application file except …
 Png -> không chắc
 Application file(s)  (either CGI or PHP)
 
 While not advised, which port would you use for unsecured API calls to a specific cPanel account?
-2082 -> True
+2082  
 
 When using whmapi1 on the command line and you want to perform a key/value call to the API you can specify all the following output formats except ...
-jsonpretty -> True
+jsonpretty  
 
-Which API performs server-level tasks?
-WHM API 1 -> True
+#Which API performs server-level tasks?
+- WHM API 1
 
 You want to let someone log into your server, but you would rather not create a new account or password for them. What script could you use if you wanted someone to be able to access your server only once?
 whmlogin
 
 You are going to play around with Tony's website files and want to make sure you get it backed up before you do so. What script could you use?
-pkgacct -> True
+pkgacct  
 
 Will you review each feature's linked documentation in full?
-Absolutely -> True
+Absolutely  
 
-Which of the following git commands would you use to update the master branch?
-merge -> True
+#Which of the following git commands would you use to update the master branch?
+- merge
 
 As an end-user, which is the proper way to restore your full cPanel backup?
 Contact your hosting provider
 hoặc: cPanel account UI 
 
 Which of the following can not be used as a staging directory for the Backup process on your server?
-/etc -> True
+/etc  
 
 Of the following external services, which is not available for remote backup destination usage?
-iCloud -> True
+iCloud  
 
-All of the following external services are available for remote backup destinations except ...
-iCloud -> True
+#All of the following external services are available for remote backup destinations except ...
+- iCloud
 
 As an end user, which is the proper way to restore your full cPanel backup?
 Contact your hosting provider
 
-What does the alias /scripts/ point to in the file system?
-/usr/local/cpanel/scripts/ -> True
+#What does the alias /scripts/ point to in the file system?
+- /usr/local/cpanel/scripts/
 
-Which language is used for a plugin installation?
-Perl -> không chắc
+#Which language is used for a plugin installation?
+- Perl
 
 #What's the name of the utility used to check what active connections Exim is currently handling at any particular time?
 - exiwhat
@@ -1143,7 +1140,7 @@ Forbidden. Access was denied to at least one relevant file.
 #Referencing the Apache error log entry shown below, which of the following options best describes the yellow-highlighted portion of the log entry (take note of the specifically-highlighted portion)?
 
 [Fri Sep 09 10:42:29.902022 2011] [core:error] [pid 35708:tid 4328636416] [client 72.15.99.187] File does not exist: /usr/local/apache2/htdocs/favicon.ico
-- The Apache process ID of the process that triggered the error
+- The Apache process ID of the process that triggered the error || The inbound IP address of the node that requested the item that caused the error message
 
 #Which of the following yum commands will install the EasyApache 4 mod_speling RPM?
 - yum install ea-apache24-mod_speling
@@ -1227,7 +1224,7 @@ There is at least one notable exception to this. Which of the following tools fo
 - Perform the following command from the command-line, as root or equivalent: yum install ea4-experimental
 
 #Which of the following factors might affect the amount of Apache access/dom logs that exist on the server?
-- Based on a value given on the "Limit Apache Access Logs" setting, found in WHM's Tweak Settings interface
+- Based on the number of virtual hosts that exist on the server
 
 #Which of the following components can be described as a specific SAPI that provides functionality in a module that behaves as if it had been compiled into Apache itself, handling appropriate requests without producing new, non-Apache processes?
 - DSO
@@ -1238,13 +1235,15 @@ There is at least one notable exception to this. Which of the following tools fo
 #Which of the following options best describes the yellow-highlighted portion of the Apache access log entry shown below?
 
 127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326
-- The time taken to complete the request (in seconds)
+- The HTTP status code - If 200 is yellow
+- The size of the returned file (in bytes) - If 2326 is yellow
 
 #In a cPanel & WHM environment, which of the following options describes a method you can use to change Apache's MPM from the command-line?
 - The "yum shell" command should be used to perform a batch transaction so that your web content does not produce errors
 
 #If a file or directory in a path being served by Apache contains incorrect permissions or uses improper user/group ownership values, which of the following HTTP status codes might you see in the Apache logs if a client were to request one of the affected paths?
-- 401
+- 401,500,408,501 -> 500
+- 504,403,401,408 -> 403
 
 #When an EasyApache 4 profile is uploaded through the WHM interface, where within the file system is it stored?
 - /etc/cpanel/ea4/profiles/custom
@@ -1288,3 +1287,169 @@ The individual packages created in that format.
 
 #Which of the following options could be described as a repository for PHP extensions?
 - pecl
+
+#In a cPanel & WHM environment, which of the following paths are used to store Apache's primary PHP configuration file ( php.conf) ?
+- /etc/apache2/conf.d/
+
+#In a cPanel & WHM environment, if you select PHP 5.6 as the default PHP version, then from which of the following paths will the php.ini file be loaded?
+- /opt/cpanel/ea-php56/root/etc/php.ini
+
+#interpreter -> A program (or part of a program) that reads in code from a specific programing language and changes it in real time to another type of code
+
+#profile -> A set of instructions for installing modules
+
+#provision -> To provide for use. In the context of EasyApache, to install
+
+#repository -> A place you can download packages, modules, or extensions from
+
+#package -> A specially-formatted file containing installation instructions and executable code
+
+#If a message has a score of -8, is it more likely to be spam or ham?
+- Ham
+
+#Where do you set the options to control spamd in WHM?
+- Email -> Spamd Startup Configuration
+
+#Assume the host environment is a default cPanel & WHM installation. Based on the log entry shown below, identify from the options available which log file that this entry would be found in:
+
+spamd: identified spam (108.6/5.0) for cars:501 in 1.4 seconds, 407 bytes
+- The /var/log/maillog file
+
+#Which of the following applications can be described as a tool used to batch update Bayesian databases?
+- sa-learn
+
+#In a cPanel & WHM environment, which of the following applications could be described as a daemon that listens on localhost and assigns scores to messages received by the mail server?
+- spamd
+
+#Given the following options, which of these indicate one of the paths within which you can find SpamAssassin rulesets stored?
+- ~/.spamassassin/
+
+#Which of the following applications can be described as a program used during service checks to ensure that spamd is operational?
+- spamc
+
+#Which of the following statements best describes an API?
+- A structured way for one program to offer services to other programs
+
+#What is the frequency of major updates that we provide for the product each year?
+- Quarterly
+
+#Which of the following features available in WHM can help customers migrate easily between servers?
+- Transfer Tool
+
+#Which of the following options best describes the role of a web hosting control panel?
+- Software on the operating system that provides a graphical interface designed to help automate server administration tasks
+
+#A user who has little-to-no experience in server management will be able to do what?
+- Use the product out-of-the-box
+
+#Assuming "domain.com" is replaced with your actual domain on a cPanel & WHM server, which of the following website addresses would not bring you to a cPanel login page?
+- domain.com
+
+#After logging into an email account's webmail interface, the account user can then perform which of the following tasks directly from within their email dashboard interface?
+- Configure spam filtering settings
+
+#Which of the following options indicates a cPanel & WHM feature that can provide users with access to the server's command line interface (or, CLI) directly from within the cPanel or WHM interfaces?
+- Terminal
+
+#About how long does it take to set up a mailing-list in cPanel?
+- 1m
+
+#What does the acronym WHM stand for, in cPanel & WHM?
+- Web Host Manager
+
+#Of the following options, which of these are cPanel & WHM features that would be of interest to a programmer or web developer?
+- API
+
+#Assuming that your server's IP address is '12.34.56.78', which of the following services could be reached by navigating to the following address in your browser?
+
+https://12.34.56.78:2087
+- Webhost Manager (WHM)
+
+#Which of the following options best describes a core benefit to using cPanel & WHM, as a web hosting provider operating on a cPanel & WHM environment?
+- cPanel users are able to self-manage configurations and software, reducing the support demand on the web host
+
+#Which of the following capabilities can a cPanel account user perform easily from within the cPanel account interface without the aid of a system administrator?
+- File and configuration management
+
+#Which of the following statistics does a cPanel account have access to from within the cPanel account interface?
+- Bandwidth usage
+
+#cPanel provides multiple database software options for server administrators to choose from. MySQL is one of these options.
+
+Which of the following indicates one of the other options that are supported and provided by cPanel?
+- MariaDB
+
+#Which of the following options best describes one way that cPanel makes installation of cPanel & WHM an easy process?
+- cPanel provides a single command that can be copied and pasted onto the command line
+
+#Which of the following Content Management Systems (CMS) have a feature built into cPanel that allows customers to manage its installations and updates from within the cPanel account interface?
+- WordPress
+
+#Which of the following feature categories within a cPanel account interface will allow users to view their Bandwidth usage statistics?
+- Metrics
+
+#Which of the following features found in the cPanel account interface will allow a cPanel account user to create subaccounts to give email, FTP, and webdisk access to additional users?
+- User Manager
+
+#Of the following services, which of these can be managed by website owners using only their cPanel account interface?
+- Scheduled Tasks
+
+#Of the following features found in a cPanel account interface, which would most likely be considered as important to a beginner-level customer seeking a cPanel & WHM web host?
+- Apache Handlers
+
+#Which of the following choices describes the method that a customer would use to access their cPanel or WHM interfaces, once it's been installed on a server?
+- Using a web browser, like Chrome or Firefox
+
+#Which of the following features available in the cPanel account interface allows new website files to easily be created, uploaded and edited by the user, directly from within the cPanel interface?
+- File Manager
+
+#Which of the following options indicates an actual feature within WHM that can be used to migrate one or more accounts between servers?
+- Transfer Tool
+
+#cPanel Support will provide which of the following services for customers that request it?
+- Performing cPanel & WHM installations
+
+#Which of the following options indicates an actual feature included with EasyApache 4 that allows accounts on the same server to use different versions of PHP simultaneously?
+- MultiPHP
+
+#Which of the following options best describes WHM's EasyApache feature?
+- An administrative feature that makes web server software changes fast and easy
+
+#Which of the following utilities does EasyApache use to quickly download and install its pre-packaged software from cPanel's official, secure online sources?
+- yum
+
+#Which of the following operating systems can cPanel & WHM NOT be installed or used on?
+- Windows Servers
+
+#Which of the following options indicates an actual security feature of cPanel & WHM servers that acts as a safety net for website security by using rules created by security authorities to intercept malicious attempts at exploiting websites and web applications?
+- ModSecurity
+
+#Which of the following categories found within the WHM interface provide a number of helpful features for administrators to secure their server with?
+- Security Center
+
+#Which of the following options best describes a benefit of using SSL certificates to secure websites hosted on your server?
+- They ensure that communication between your server and the internet is safe and encrypted
+
+#In 2017, cPanel celebrated its anniversary of how many years?
+- 20 years
+
+#Which of the following indicates cPanel's flagship product?
+- EasyApache & cPHulk
+
+#Which of the following services does our support team provide for customers coming from DirectAdmin, Plesk, and Ensim control panels?
+- Free migration
+
+#Which of the following types of applications can be created and managed with the cPanel account interface's Application Manager feature?
+- Node.js Applications
+
+#Which of the following online resources provided by cPanel is the ideal place for customers to submit cPanel & WHM feature ideas, improvements, and suggestions for our developers to consider?
+- The cPanel Feature Request Site
+
+#Which of the following options indicates the frequency of major updates being released for the product each year?
+- Quarterly releases
+
+#Which of the following options indicates the office hours in which the cPanel Technical Support Analyst team is available?
+- 24 hours a day, 365 days a year
+
+#Which of the following services does cPanel provide for every customer with an active cPanel license?
+- Free technical support, support services, and customer assistance
